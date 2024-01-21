@@ -11,10 +11,10 @@ pipeline {
                 sh 'npm install' 
             }
         }
-    }
-    stage('Complete') {
-        steps {
-            echo 'Job Complite!'
+        stage('Complete') {
+            steps {
+                echo 'Job Complite!'
+           }
         }
     }
 }
