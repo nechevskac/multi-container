@@ -12,6 +12,13 @@ pipeline {
                     sh 'npm install'
                 }
             }
+        }        
+        stage('Build') { 
+            steps {
+                dir('frontend') {
+                    sh 'npm test'
+                }
+            }
         }
         stage('Complete') {
             steps {
