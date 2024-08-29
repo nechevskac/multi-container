@@ -19,7 +19,7 @@ function App() {
         const resData = await response.json();
 
         if (!response.ok) {
-          throw new Error(resData.message || 'Fetching the goals failed.');
+          throw new Error(resData.message || 'Fetching the goals faileddd.');
         }
 
         setLoadedGoals(resData.goals);
